@@ -1,12 +1,11 @@
 # 线程池：一次性开辟一些线程。我们用户直接给线程池子提交任务。线程任务的调度交给线程池来完成
-
-#
-from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
+# from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
+from concurrent.futures import ThreadPoolExecutor
 
 
 def fun(name):
-    for i in range(1000):
-        print(name, i)
+    for number in range(1000):
+        print(name, number)
 
 
 if __name__ == "__main__":
